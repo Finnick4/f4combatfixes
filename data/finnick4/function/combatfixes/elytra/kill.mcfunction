@@ -1,8 +1,7 @@
 
-execute at @s run playsound minecraft:entity.generic.explode player @a ~ ~ ~ 10 0.4 1
+execute as @s at @s run loot spawn ~ ~ ~ loot finnick4:combatfixes/playerhead
 
-execute at @s run particle minecraft:flash ~ ~ ~ 0 0 0 1 1 normal
-execute at @s run particle minecraft:firework ~ ~ ~ 0 0 0 0.2 20 normal
-execute at @s run particle minecraft:flame ~ ~ ~ 0 0 0 0.2 20 normal
+scoreboard players set @s finnick4.combatfixes.combattagged.tick 0
+
 kill @s
 

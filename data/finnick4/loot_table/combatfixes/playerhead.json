@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:player_head",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "attacking_player",
+                            "lore": [
+                                [
+                                    {
+                                        "italic": false,
+                                        "color": "gold",
+                                        "text": "Had an elytra malfunction in a fight"
+                                    }
+                                ]
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:fill_player_head",
+                            "entity": "this"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
