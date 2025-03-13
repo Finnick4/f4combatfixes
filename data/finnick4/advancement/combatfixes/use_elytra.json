@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "items": "minecraft:elytra"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "finnick4:combatfixes/used_elytra"
+  }
+}
+
