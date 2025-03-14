@@ -1,8 +1,7 @@
 
-scoreboard players operation @s finnick4.combatfixes.combattagged.sec = @s finnick4.combatfixes.combattagged.tick
-scoreboard players operation @s finnick4.combatfixes.combattagged.sec /= #20 finnick4.combatfixes.numbers
+function finnick4:combatfixes/combattag/calculate_duration
 
-title @s actionbar ["",{"text":"You are combat tagged ","color":"red"},{"text":"(","color":"gray"},{"score":{"name":"@s","objective":"finnick4.combatfixes.combattagged.sec"},"color":"gray"},{"text":" seconds remaining)","color":"gray"}]
+title @s actionbar ["",{"text":"You are combat tagged ","color":"red"},{"text":"(","color":"gray"},{"score":{"name":"@s","objective":"finnick4.combatfixes.combattagged.sec"},"color":"dark_red"},{"text":".","color":"dark_red"},{"score":{"name":"@s","objective":"finnick4.combatfixes.combattagged.dec1"},"color":"dark_red"},{"text":" seconds remaining)","color":"gray"}]
 
 scoreboard players remove @s finnick4.combatfixes.combattagged.tick 1
 
