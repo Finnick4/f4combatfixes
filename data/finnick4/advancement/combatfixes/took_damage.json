@@ -1,0 +1,32 @@
+{
+    "criteria": {
+      "root": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "blocked": false,
+            "source_entity": {
+              "type": [
+                "minecraft:player",
+                "minecraft:arrow",
+                "minecraft:end_crystal",
+                "minecraft:skeleton",
+                "minecraft:egg",
+                "minecraft:ender_pearl",
+                "minecraft:snowball",
+                "minecraft:snow_golem",
+                "minecraft:zombie",
+                "minecraft:creeper",
+                "minecraft:spider",
+                "minecraft:cave_spider",
+                "minecraft:witch"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "finnick4:combatfixes/took_damage"
+    }
+  }
